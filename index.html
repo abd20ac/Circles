@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <script>
+
+        let grosse;
+        function setup() {
+            createCanvas(600, 600);
+            background(0,0,230);
+        }
+
+        
+        
+        function draw() {
+        grosse = map(mouseX,0,600,10,100 )
+        fill(grosse* 2.5,0,200)
+        if(mouseIsPressed)  circle(mouseX,mouseY, grosse)
+        }
+    </script>
+</body>
+</html>
